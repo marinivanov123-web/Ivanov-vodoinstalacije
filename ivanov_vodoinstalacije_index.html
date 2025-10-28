@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="hr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ivanov vodoinstalacije j.d.o.o.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --blue-1: #005f9e;
+      --blue-2: #0094dd;
+      --dark: #0f1724;
+      --muted:#6b7280;
+      --card:#ffffff;
+    }
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial; margin:0; color:var(--dark); background:linear-gradient(180deg, #eaf6ff 0%, #f8fdff 100%);}
+    header{background:linear-gradient(90deg,var(--blue-1),var(--blue-2)); color:white; padding:48px 20px 64px; clip-path:polygon(0 0,100% 0,100% 84%,0 100%);}    
+    .container{max-width:1000px;margin:0 auto}
+    .nav{display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;gap:14px;align-items:center}
+    .logo img{width:64px;height:auto;border-radius:12px;box-shadow:0 6px 18px rgba(0,0,0,0.08)}
+    h1{margin:0;font-size:28px;line-height:1.05}
+    p.lead{margin:10px 0 0;font-size:16px;opacity:0.95}
+    .hero{display:flex;gap:28px;align-items:center;justify-content:space-between;margin-top:28px}
+    .hero-left{flex:1}
+    .cta{margin-top:20px;display:flex;gap:12px}
+    .btn{background:white;color:var(--blue-1);border-radius:10px;padding:10px 16px;font-weight:600;text-decoration:none;box-shadow:0 6px 18px rgba(3,102,214,0.12)}
+    .btn-ghost{background:transparent;border:2px solid rgba(255,255,255,0.18);color:white}
+    .hero-right{width:320px;background:white;color:black;padding:18px;border-radius:14px;box-shadow:0 12px 40px rgba(3,102,214,0.08)}
+    .contact-item{display:flex;gap:12px;align-items:center;margin:8px 0}
+    .icon{width:44px;height:44px;border-radius:8px;background:linear-gradient(180deg,var(--blue-2),var(--blue-1));display:flex;align-items:center;justify-content:center;color:white}
+    main{padding:40px 20px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 20px rgba(12,24,40,0.05)}
+    h3{margin:0 0 8px}
+    .muted{color:var(--muted);font-size:15px}
+    .about{display:flex;gap:20px;align-items:flex-start;margin-bottom:18px}
+    .about p{margin:0}
+    footer{padding:24px 20px;background:transparent;border-top:1px solid rgba(15,23,36,0.06);text-align:center}
+    a.link{color:white;text-decoration:none}
+
+    @media (max-width:880px){
+      .grid{grid-template-columns:1fr}
+      .hero{flex-direction:column;align-items:stretch}
+      .hero-right{width:100%}
+      .nav{flex-direction:column;gap:18px;align-items:flex-start}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav class="nav">
+        <div class="brand">
+          <div class="logo">
+            <img src="LOGO%20FIRME.png" alt="Logo Ivanov vodoinstalacije">
+          </div>
+          <div>
+            <div style="font-weight:700">Ivanov vodoinstalacije j.d.o.o.</div>
+            <div style="font-size:13px;opacity:0.95">Voda Vodi Vodu Vodi</div>
+          </div>
+        </div>
+        <div style="display:flex;gap:12px;align-items:center">
+          <a class="link" href="#usluge">Usluge</a>
+          <a class="link" href="#o-nama">O nama</a>
+          <a class="link" href="#kontakt">Kontakt</a>
+        </div>
+      </nav>
+
+      <section class="hero">
+        <div class="hero-left">
+          <h1>Pouzdani vodoinstalaterski radovi u Splitu i okolici</h1>
+          <p class="lead">Kvalitetna izvedba vodoinstalaterskih radova – od manjih popravaka do kompletnog izvođenja instalacija u novogradnji, adaptacijama i renovacijama.</p>
+          <div class="cta">
+            <a class="btn" href="#kontakt">Nazovi sada</a>
+            <a class="btn btn-ghost" href="#usluge">Naše usluge</a>
+          </div>
+        </div>
+
+        <aside class="hero-right">
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <div style="font-weight:700">Kontakt</div>
+          </div>
+
+          <div style="margin-top:14px">
+            <div class="contact-item">
+              <div class="icon">📞</div>
+              <div>
+                <div style="font-weight:600">+385 95 851 9866</div>
+                <div style="font-weight:600">+385 95 556 4937</div>
+                <div class="muted">Mobiteli</div>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="icon">✉️</div>
+              <div>
+                <div style="font-weight:600">ivanov.vodoinstalacije@gmail.com</div>
+                <div class="muted">Email</div>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="icon">📍</div>
+              <div>
+                <div style="font-weight:600">Mosećka 72, 21000 Split</div>
+                <div class="muted">Adresa</div>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </section>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section id="usluge" style="margin-bottom:28px">
+        <h2 style="margin-bottom:12px">Naše usluge</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Renovacije</h3>
+            <p class="muted">Kompletne vodoinstalaterske usluge kod renovacija stambenih i poslovnih prostora. Prilagođavamo se vašem projektu i jamčimo uredan završetak radova.</p>
+          </div>
+
+          <div class="card">
+            <h3>Adaptacije</h3>
+            <p class="muted">Moderniziramo i unapređujemo postojeće vodovodne instalacije. Precizno, sigurno i u dogovorenom roku.</p>
+          </div>
+
+          <div class="card">
+            <h3>Novogradnja</h3>
+            <p class="muted">Izvodimo kompletne instalacije za novogradnju – od prvih cijevi do završne montaže sanitarija, s naglaskom na kvalitetu i trajnost.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="o-nama" style="margin-bottom:28px">
+        <h2 style="margin-bottom:12px">O nama</h2>
+        <div class="card about">
+          <div style="flex:1">
+            <p>Naša vodoinstalaterska firma specijalizirana je za sve vrste vodoinstalaterskih radova – od manjih popravaka do kompletnog izvođenja instalacija u novogradnji, adaptacijama i renovacijama. S dugogodišnjim iskustvom i stručnim timom, garantiramo kvalitetnu izvedbu, poštivanje rokova i čistoću radova.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="kontakt">
+        <h2 style="margin-bottom:12px">Kontakt</h2>
+        <div class="card">
+          <p style="margin:0 0 8px">Javite nam se – radimo brzo i pouzdano. <br><strong>Telefon:</strong> +385 95 851 9866 • +385 95 556 4937 <br><strong>Email:</strong> ivanov.vodoinstalacije@gmail.com</p>
+          <p class="muted" style="margin:0 0 12px">Adresa: Mosećka 72, 21000 Split</p>
+
+          <form onsubmit="event.preventDefault(); alert('Hvala! Vaša poruka je poslana (demo).');" style="display:flex;flex-direction:column;gap:10px">
+            <input required placeholder="Ime i prezime" style="padding:10px;border-radius:8px;border:1px solid #e6eef7">
+            <input required type="email" placeholder="Email" style="padding:10px;border-radius:8px;border:1px solid #e6eef7">
+            <textarea required placeholder="Poruka" rows="4" style="padding:10px;border-radius:8px;border:1px solid #e6eef7"></textarea>
+            <div style="display:flex;gap:8px">
+              <button class="btn" type="submit">Pošalji poruku</button>
+              <a class="btn btn-ghost" href="tel:+385958519866">Nazovi</a>
+            </div>
+          </form>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <div style="font-size:14px;opacity:0.9">© 2025 Ivanov vodoinstalacije j.d.o.o.</div>
+  </footer>
+
+</body>
+</html>
