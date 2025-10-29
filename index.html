@@ -155,7 +155,12 @@
           <p style="margin:0 0 8px">Javite nam se – radimo brzo i pouzdano. <br><strong>Telefon:</strong> +385 95 851 9866 • +385 95 556 4937 <br><strong>Email:</strong> ivanov.vodoinstalacije@gmail.com</p>
           <p class="muted" style="margin:0 0 12px">Adresa: Mosećka 72, 21000 Split</p>
 
-          <form onsubmit="event.preventDefault(); alert('Hvala! Vaša poruka je poslana (demo).');" style="display:flex;flex-direction:column;gap:10px">
+          <form action="https://formspree.io/f/mnqyzabc" method="POST" style="display:flex;flex-direction:column;gap:10px">
+  <input required name="Ime i prezime" placeholder="Ime i prezime" style="padding:10px;border-radius:8px;border:1px solid #e6eef7">
+  <input required type="email" name="Email" placeholder="Email" style="padding:10px;border-radius:8px;border:1px solid #e6eef7">
+  <textarea required name="Poruka" placeholder="Poruka" rows="4" style="padding:10px;border-radius:8px;border:1px solid #e6eef7"></textarea>
+  <button class="btn" type="submit">Pošalji poruku</button>
+</form>
             <input required placeholder="Ime i prezime" style="padding:10px;border-radius:8px;border:1px solid #e6eef7">
             <input required type="email" placeholder="Email" style="padding:10px;border-radius:8px;border:1px solid #e6eef7">
             <textarea required placeholder="Poruka" rows="4" style="padding:10px;border-radius:8px;border:1px solid #e6eef7"></textarea>
